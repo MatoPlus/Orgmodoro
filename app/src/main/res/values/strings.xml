@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Orgmodoro</string>
+    <string name="countdown_time">25:00</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="start_status_label">Start</string>
+    <string name="resume_status_label">Resume</string>
+    <string name="pause_status_label">Pause</string>
+    <string name="settings_button">Settings button</string>
+    <string name="break_label">Break Interval</string>
+    <string name="break_description_label">How long should a break be?</string>
+    <string name="break_status_view">5 Minutes</string>
+    <string name="work_label">Work Interval</string>
+    <string name="work_description_label">How long should a working interval be?</string>
+    <string name="work_status_view">25 Minutes</string>
+    <string name="theme_label">Theme</string>
+    <string name="theme_description_label">What is the colour scheme of the app?</string>
+    <string name="dark_theme_label">Dark</string>
+    <string name="light_theme_label">Light</string>
+    <string name="countdown_work_label">WORK</string>
+    <string name="countdown_break_label">BREAK</string>
+    <string name="channel_name">Timer Toggle</string>
+</resources>

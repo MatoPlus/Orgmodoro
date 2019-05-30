@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBackground"
+    tools:context=".SettingsActivity">
+
+    <ImageButton
+        android:id="@+id/timerButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="23dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/settings_button"
+        android:src="@drawable/light_timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/breakLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="162dp"
+        android:text="@string/break_label"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/breakStatusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="260dp"
+        android:text="@string/break_status_view"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/breakSeekBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/workStatusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/work_status_view"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/workSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/workDescriptionLabel" />
+
+    <TextView
+        android:id="@+id/breakDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:text="@string/break_description_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakLabel" />
+
+    <TextView
+        android:id="@+id/workDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="88dp"
+        android:text="@string/work_description_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workLabel" />
+
+    <TextView
+        android:id="@+id/themeDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginStart="89dp"
+        android:text="@string/theme_description_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/themeLabel" />
+
+    <TextView
+        android:id="@+id/workLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/work_label"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakDescriptionLabel" />
+
+    <TextView
+        android:id="@+id/themeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="66dp"
+        android:text="@string/theme_label"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workDescriptionLabel" />
+
+    <SeekBar
+        android:id="@+id/breakSeekBar"
+        android:layout_width="319dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:max="59"
+        android:progress="4"
+        android:progressTint="@color/lightPrimary"
+        android:thumbTint="@color/lightPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakDescriptionLabel" />
+
+    <SeekBar
+        android:id="@+id/workSeekBar"
+        android:layout_width="319dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="148dp"
+        android:max="59"
+        android:progress="24"
+        android:progressTint="@color/lightPrimary"
+        android:thumbTint="@color/lightPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakDescriptionLabel" />
+
+    <RadioGroup
+        android:id="@+id/themeRadioGroup"
+        android:layout_width="300dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="203dp"
+        android:layout_marginLeft="203dp"
+        android:layout_marginRight="203dp"
+        android:layout_marginStart="203dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/themeDescriptionLabel">
+
+        <RadioButton
+            android:id="@+id/lightThemeRadioButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/light_theme_label"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:buttonTint="@color/lightPrimary" />
+
+        <RadioButton
+            android:id="@+id/darkThemeRadioButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dark_theme_label"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:buttonTint="@color/lightPrimary" />
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
