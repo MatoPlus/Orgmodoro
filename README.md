@@ -17,6 +17,7 @@ Any android phone or tablet using API version 21+ (Latest API version tested on 
 - Multiple app colour schemes
 - Notifications with resume functionality
 - Runs in the background!
+- Layout for both tablets and phones!
 
 # Credits
  - Omega Icon made by Pixelmeetup from www.flaticon.com
