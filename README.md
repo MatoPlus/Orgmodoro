@@ -1,6 +1,9 @@
 # Orgmodoro
 A minimal Pomodoro timer app for android.
 
+![Light theme: work and break mode](img/lightDemo.png "Light theme: work and break mode")
+![Dark theme: work and break mode](img/darkDemo.png "Dark theme: work and break mode")
+
 # Requirement
 Any android phone or tablet using API version 21+ (Latest API version tested on level 27)
 
@@ -13,4 +16,9 @@ Any android phone or tablet using API version 21+ (Latest API version tested on 
 - Multiple app colour schemes
 - Notifications with resume functionality
 - Runs in the background!
+
+# Credits
+ - Omega Icon made by Pixelmeetup from www.flaticon.com
+ - Settings Icon made by Gregor Cresnar from www.flaticon.com
+ - Time Icon made by Freepik from www.flaticon.com
 
