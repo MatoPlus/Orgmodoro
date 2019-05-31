@@ -23,4 +23,3 @@ Any android phone or tablet using API version 21+ (Latest API version tested on 
  - Omega Icon made by Pixelmeetup from www.flaticon.com
  - Settings Icon made by Gregor Cresnar from www.flaticon.com
  - Time Icon made by Freepik from www.flaticon.com
-
