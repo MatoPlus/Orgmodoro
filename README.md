@@ -7,6 +7,7 @@ A minimal Pomodoro timer app for android.
 
 # Requirement
 Any android phone or tablet using API version 21+ (Latest API version tested on level 27)
+- On API version 26+, you may have to manually set the notification channel's importance to urgent. This makes sure the notification pops up.
 
 # Features
 - Minimal Pomodoro timer
@@ -18,6 +19,11 @@ Any android phone or tablet using API version 21+ (Latest API version tested on 
 - Notifications with resume functionality
 - Runs in the background!
 - Layout for both tablets and phones!
+
+# Known Bugs
+- Countdown timer is not consistent, it may be slower than an actual timer (However, it is accurate enough as a timer).
+- singleTask launchMode is used in the manifest, the activity task stack could be broken because multiple activities are used. 
+- From time to time, the app may lose its saved variables, and the app may forget what the current time left, the current state, or even the colour theme used. 
 
 # Credits
  - Omega Icon made by Pixelmeetup from www.flaticon.com
