@@ -25,25 +25,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.Locale;
 
-/* Credits:
- * - Omega Icon made by Pixelmeetup from www.flaticon.com
- * - Settings Icon made by Gregor Cresnar from www.flaticon.com
- * - Time Icon made by Freepik from www.flaticon.com
- */
-
-/* Known Bugs:
- * - Countdown timer is not consistent, it may be slower than an actual timer.
- * - Colour is not 100% accurate due to how android uses colour values.
- * - On API version 26+, you may have to manually set the notification channel's importance to
- * urgent. This makes sure the notification pops up.
- * - Because the singleTask launchMode is used in the manifest, the activity task stack could be
- * broken because multiple activities are used. This means that from time to time, the app may lose
- * its saved variables, and the app may forget what the current time left, the current
- * state, or even the colour theme used. This bug seems more likely to occur when the timer is
- * longer. This bug does not happen often. However, it is still important to note this bug.
- * - Memory usage is quite high for a simple timer-like application.
- */
-
 /*
  * Author: Ri Xin Yang
  * Date: May 24, 2019
@@ -64,7 +45,7 @@ public class OrgmodoroActivity extends Activity {
     private final static long DEFAULT_WORK_DURATION = 1500000;
     private final static long DEFAULT_BREAK_DURATION = 300000;
     private final static int REQUEST_CODE_SETTINGS = 0;
-    private final static int COUNTDOWN_INTERVAL = 50;
+    private final static int COUNTDOWN_INTERVAL = 150;
     private final static int NOTIFICATION_ID = 0;
     private final static String CHANNEL_ID = "togglechannel";
     private CountDownTimer countDownTimer;
@@ -190,6 +171,8 @@ public class OrgmodoroActivity extends Activity {
 
             // update instance variable responsible to keep track of current timer's countdown.
             timeLeftInMillis = millisUntilFinished;
+
+            Log.d("tick", ""+timeLeftInMillis);
 
             // update widget countdown widgets and text responsible for displaying the text.
             updateTimerWidgets();
