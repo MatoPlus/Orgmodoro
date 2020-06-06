@@ -10,7 +10,7 @@
     <string name="break_description_label">How long should a break be?</string>
     <string name="break_status_view">5 Minutes</string>
     <string name="work_label">Work Interval</string>
-    <string name="work_description_label">How long should a working interval be?</string>
+    <string name="work_description_label">How long should a working period be?</string>
     <string name="work_status_view">25 Minutes</string>
     <string name="theme_label">Theme</string>
     <string name="theme_description_label">What is the colour scheme of the app?</string>
