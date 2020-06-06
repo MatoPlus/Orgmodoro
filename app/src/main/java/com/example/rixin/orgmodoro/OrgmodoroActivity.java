@@ -172,8 +172,6 @@ public class OrgmodoroActivity extends Activity {
             // update instance variable responsible to keep track of current timer's countdown.
             timeLeftInMillis = millisUntilFinished;
 
-            Log.d("tick", ""+timeLeftInMillis);
-
             // update widget countdown widgets and text responsible for displaying the text.
             updateTimerWidgets();
         }
