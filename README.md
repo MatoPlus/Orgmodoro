@@ -1,4 +1,8 @@
 # Orgmodoro
+
+![License: MIT](https://img.shields.io/github/license/codeprentice-org/fanotify.svg)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/codeprentice-org/fanotify.svg)
+
 A minimal Pomodoro timer app for android.
 
 ![Light theme: work and break mode](img/lightDemo.png "Light theme: work and break mode")
